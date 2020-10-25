@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>PHP MOTORS - Login</title> <!-- This is what shows in the tab title/name -->
+	<link rel="stylesheet" type="text/css" href="/phpmotors/css/website.css">
+</head>
+<body>
+	<div id="main">	
+    <header id="page_header">
+        
+    </header>
+        <nav> </nav> 
+        
+        <form method="POST" action="/phpmotors/accounts/index.php">
+            <p>* All fields are required </p>
+            <label for="clientEmail">* Email:</label><br>
+            <input name="clientEmail" id="clientEmail" placeholder="johndoe@email.com" type="email" required><br>
+            <label for="clientPassword">* Password:</label><br>
+            <span>Passwords must be at least 8 characters and contain at least 1 number, 1 capital letter and 1 special character</span><br>
+            <input name="clientPassword" id="clientPassword" type="password" required pattern="(?=^.{8,}$)(?=.*\d)(?=.*\W+)(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"><br>
+            <input type="submit" name="submit" value="Login"><br><br>
+            <input type="hidden" name="action" value="login">
+            <p><a href="../accounts/index.php?action=register">Register for an account</a></p>
+        </form>                                
+</div>
+</body>
+</html>
