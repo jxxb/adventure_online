@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Adventure Online - Demo</title> <!-- This is what shows in the tab title/name -->
+</head>
+
+<script src="skulpt.js"></script>
+<script src="skulpt-stdlib.js"></script>
+
+<body onload="brython()">
+ <button id="btn">Play Demo</button>
+</body>
+
+<script type="text/python">
+from browser import document,alert,console
+
+def show(e):
+    alert("please close window")
+
+document['btn'].bind("click",show)
+
+document <= "hello world"
+</script>
+
+</html>
